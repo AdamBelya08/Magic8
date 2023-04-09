@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magic-8 Ball</title>
+  </head>
+  <body>
+    <script>
+      // Array of responses
+      var responses = [
+        "Yes",
+        "No",
+        "Maybe",
+        "It is certain",
+        "Ask again later",
+        "Better not tell you now",
+        "Cannot predict now",
+        "Outlook not so good",
+      ];
+
+      // Prompt for question
+      var question = prompt("Ask a yes or no question:");
+
+      // Generate a random number between 0 and 7
+      var randomIndex = Math.floor(Math.random() * responses.length);
+
+      // Alert with the response
+      alert(responses[randomIndex]);
+    </script>
+  </body>
+</html>
